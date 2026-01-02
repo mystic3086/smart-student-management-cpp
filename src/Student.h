@@ -12,7 +12,8 @@ private:
     float cgpa;
 
 public:
-    Student(int r, const std::string &n, int a, float c)
+    Student() : rollNumber(0), name(""), age(0), cgpa(0.0f) {}
+    Student(int r, const std::string& n, int a, float c)
         : rollNumber(r), name(n), age(a), cgpa(c) {}
 
     // Getters
@@ -21,8 +22,9 @@ public:
     int getAge() const { return age; }
     float getCgpa() const { return cgpa; }
 
-    // ✅ SETTERS 
-    void setName(const std::string &n) { name = n; }
+    // Setters
+    void setRollNumber(int r) { rollNumber = r; }
+    void setName(const std::string& n) { name = n; }
     void setAge(int a) { age = a; }
     void setCgpa(float c) { cgpa = c; }
 
@@ -30,7 +32,7 @@ public:
         std::cout << "Roll: " << rollNumber
                   << ", Name: " << name
                   << ", Age: " << age
-                  << ", CGPA: " << cgpa << '\n';
+                  << ", CGPA: " << cgpa << "\n";
     }
 };
 
