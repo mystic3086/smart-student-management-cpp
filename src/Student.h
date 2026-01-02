@@ -1,4 +1,3 @@
-// src/Student.h
 #ifndef STUDENT_H
 #define STUDENT_H
 
@@ -13,29 +12,25 @@ private:
     float cgpa;
 
 public:
-    // Constructor
-    Student(int r, std::string n, int a, float c): rollNumber(r), name(n), age(a), cgpa(c) {}
+    Student(int r, const std::string &n, int a, float c)
+        : rollNumber(r), name(n), age(a), cgpa(c) {}
 
-    // Getter functions
-    int getRollNumber() const { 
-        return rollNumber; 
-    }
-    std::string getName() const { 
-        return name;
-     }
-    int getAge() const { 
-        return age;
-     }
-    float getCgpa() const { 
-        return cgpa; 
-    }
+    // Getters
+    int getRollNumber() const { return rollNumber; }
+    std::string getName() const { return name; }
+    int getAge() const { return age; }
+    float getCgpa() const { return cgpa; }
 
-    // Display student info
+    // ✅ SETTERS 
+    void setName(const std::string &n) { name = n; }
+    void setAge(int a) { age = a; }
+    void setCgpa(float c) { cgpa = c; }
+
     void display() const {
-        std::cout << "Roll No: " << rollNumber
+        std::cout << "Roll: " << rollNumber
                   << ", Name: " << name
                   << ", Age: " << age
-                  << ", CGPA: " << cgpa << std::endl;
+                  << ", CGPA: " << cgpa << '\n';
     }
 };
 
