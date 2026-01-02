@@ -4,19 +4,11 @@
 
 int main() {
     std::vector<Student> students;
-
-    // Example: Add a student
-    Student s1(101, "Alice", 19, 9.2);
-    students.push_back(s1);
-
-    // Display all students
-    for (const auto &s : students) {
-        s.display();
-    }
     int choice;
+    //loop for choices
     do {
         std::cout << "\n1. Add Student\n2. Display Students\n3. Exit\nChoice: ";
-        std::cin >> choice;
+        std::cin >> choice;//inp
 
         if (choice == 1) {
             int r, a; float c; std::string n;
@@ -26,7 +18,7 @@ int main() {
             std::cout << "CGPA: "; std::cin >> c;
             students.push_back(Student(r, n, a, c));
         } else if (choice == 2) {
-            for (const auto &s : students) s.display();
+            for (const auto &s : students) s.display();//const -> dosent change stuff,auto -> Non-const reference
         }
 
     } while (choice != 3);
