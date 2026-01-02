@@ -14,14 +14,21 @@ private:
 
 public:
     // Constructor
-    Student(int r, std::string n, int a, float c)
-        : rollNumber(r), name(n), age(a), cgpa(c) {}
+    Student(int r, std::string n, int a, float c): rollNumber(r), name(n), age(a), cgpa(c) {}
 
     // Getter functions
-    int getRollNumber() const { return rollNumber; }
-    std::string getName() const { return name; }
-    int getAge() const { return age; }
-    float getCgpa() const { return cgpa; }
+    int getRollNumber() const { 
+        return rollNumber; 
+    }
+    std::string getName() const { 
+        return name;
+     }
+    int getAge() const { 
+        return age;
+     }
+    float getCgpa() const { 
+        return cgpa; 
+    }
 
     // Display student info
     void display() const {
