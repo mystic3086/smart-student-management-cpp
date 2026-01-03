@@ -4,16 +4,16 @@ A console-based **Student Management System** written in C++ with **binary file 
 
 ---
 
-## Features
+## Features(role based)
 
-### Admin
+### Admin commands
 - Add, update, delete students
 - Search by **roll number** or **name** (partial matches allowed)
 - Display all students
 - Display students **sorted by CGPA**
 - Automatically highlights the **top student**
 
-### Student
+### Student commands
 - Display all students
 - Search by **roll number** or **name**
 - View students **sorted by CGPA**
@@ -37,7 +37,7 @@ students.dat           # Binary file (generated automatically)
 
 ---
 
-## Highlights / Resume Points
+## Features / concepts 
 - **OOP concepts**: Classes, Encapsulation, Getters/Setters  
 - **Binary file I/O** for persistent data storage  
 - **Admin and Student menus** with input validation  
@@ -46,7 +46,7 @@ students.dat           # Binary file (generated automatically)
 
 ---
 
-## Optional Enhancements
+## Future additions
 - Add **grades** based on CGPA  
 - Implement **login system** for Admin vs Student  
 - Export students to **CSV or text file**  
